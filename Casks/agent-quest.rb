@@ -10,8 +10,8 @@ cask "agent-quest" do
   app "agent-quest.app"
 
   caveats <<~EOS
-    agent-quest is not code-signed. If macOS refuses to open it, install
-    with the --no-quarantine flag or run:
+    agent-quest is not code-signed. Before first launch, clear the
+    quarantine flag:
       xattr -cr /Applications/agent-quest.app
 
     After launching, click the tray icon and choose
